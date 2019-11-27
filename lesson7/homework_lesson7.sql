@@ -19,7 +19,7 @@ SELECT id AS product_id, name AS product_name,
 (SELECT name FROM catalogs WHERE catalogs.id = products.catalog_id) AS catalog_section_name FROM products;
 
 -- Или с использованием JOIN
-SELECT p.id, p.name, c.name FROM catalogs AS c JOIN products AS p WHERE c.id = p.catalog_id;
+SELECT p.id, p.name, c.name FROM catalogs AS c JOIN products AS p ON c.id = p.catalog_id;
 
 
 
