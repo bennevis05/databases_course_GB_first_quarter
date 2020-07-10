@@ -1,1 +1,1 @@
-# databases_course_GB_first_quarter
+# mysql_databases_course
